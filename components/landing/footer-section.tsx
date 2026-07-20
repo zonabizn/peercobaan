@@ -10,7 +10,7 @@ export function FooterSection() {
           <div className="lg:col-span-1">
             <div className="flex items-center gap-2">
               <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary font-bold text-primary-foreground">
-                JR
+                EB
               </span>
               <span className="text-lg font-bold text-foreground">
                 {site.name}
@@ -79,9 +79,9 @@ export function FooterSection() {
 
         <div className="mt-12 flex flex-col items-center justify-between gap-3 border-t border-border pt-6 text-sm text-muted-foreground sm:flex-row">
           <p>
-            &copy; {new Date().getFullYear()} {site.name}. Semua hak dilindungi.
+            &copy; {new Date().getFullYear()} excavatorbogor.web.id Semua hak dilindungi.
           </p>
-          <p>Sewa Excavator Jabodetabek Terpercaya</p>
+          <p>Sewa Excavator Bogor Terpercaya</p>
         </div>
       </div>
     </footer>

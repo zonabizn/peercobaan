@@ -19,24 +19,6 @@ const testimonials = [
     text: "Pelayanan ramah dan profesional. Excavator terawat, tidak ada kendala selama pekerjaan berlangsung. Pasti sewa lagi.",
     initials: "RK",
   },
-  {
-    name: "Hendra Gunawan",
-    role: "Mandor Proyek - Cileungsi",
-    text: "Respon cepat, unit siap kirim, dan operatornya kerja rapi. Sangat membantu untuk normalisasi saluran di proyek kami.",
-    initials: "HG",
-  },
-  {
-    name: "Dewi Lestari",
-    role: "PT Konstruksi - Jakarta",
-    text: "Kerja sama beberapa proyek besar selalu lancar. Dokumen lengkap dan alat sesuai spesifikasi yang kami butuhkan.",
-    initials: "DL",
-  },
-  {
-    name: "Agus Purnomo",
-    role: "Individu - Sentul",
-    text: "Baru pertama sewa excavator dan dibantu sampai paham. Harga transparan tanpa biaya tersembunyi. Terima kasih Jaya Rental.",
-    initials: "AP",
-  },
 ];
 
 export function TestimonialsSection() {

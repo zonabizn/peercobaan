@@ -32,7 +32,7 @@ export function HeroSection() {
           </span>
 
           <h1 className="mt-6 text-balance text-4xl font-extrabold leading-tight tracking-tight text-background sm:text-5xl lg:text-6xl">
-            Sewa Excavator Jabodetabek
+            Sewa Excavator Bogor
           </h1>
 
           <p className="mt-5 max-w-xl text-pretty text-lg leading-relaxed text-background/85">
@@ -72,9 +72,7 @@ export function HeroSection() {
             </a>
           </div>
 
-          <p className="mt-4 text-sm text-background/70">
-            Konsultasi gratis &middot; Hubungi {site.phone}
-          </p>
+
         </div>
       </div>
     </section>
