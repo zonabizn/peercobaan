@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import { Phone, CheckCircle2 } from "lucide-react";
 import { WhatsappIcon } from "./whatsapp-icon";
@@ -11,13 +12,31 @@ const badges = [
 ];
 
 export function HeroSection() {
+  const [heroImage, setHeroImage] = useState("/images/hero-excavator.png");
+
+  useEffect(() => {
+    const fetchHeroImage = async () => {
+      try {
+        const response = await fetch('/api/upload?type=hero');
+        const data = await response.json();
+        
+        if (data.images && data.images.length > 0) {
+          setHeroImage(data.images[0].url);
+        }
+      } catch (error) {
+        console.error('Error fetching hero image:', error);
+      }
+    };
+
+    fetchHeroImage();
+  }, []);
   return (
     <section
       id="home"
       className="relative flex min-h-[600px] items-center overflow-hidden pt-16 sm:pt-20 sm:min-h-[92vh]"
     >
       <Image
-        src="/images/hero-excavator.png"
+        src={heroImage}
         alt="Excavator kuning bekerja di lokasi konstruksi saat senja"
         fill
         priority
