@@ -36,7 +36,7 @@ export function Navigation() {
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 md:px-6">
         <a href="#home" className="flex items-center gap-2">
           <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary font-bold text-primary-foreground">
-            JR
+            EB
           </span>
           <span className="text-lg font-bold tracking-tight text-foreground">
             {site.name}

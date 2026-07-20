@@ -33,9 +33,7 @@ export function CtaSection() {
           </a>
         </div>
 
-        <p className="mt-6 font-mono text-sm text-background/70">
-          {site.phone}
-        </p>
+
       </div>
     </section>
   );

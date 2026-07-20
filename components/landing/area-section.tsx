@@ -3,7 +3,7 @@ import { MapPin } from "lucide-react";
 const areas = [
   { name: "Bogor", desc: "Kota & Kabupaten Bogor, Cileungsi, Cibinong, Sentul" },
   { name: "Depok", desc: "Seluruh area Depok, Cimanggis, Sawangan, Cinere" },
-  { name: "Bekasi", desc: "Kota & Kabupaten Bekasi, Cikarang, Tambun, Setu" },
+  { name: "Bekasi", desc: "Kota & Kabupaten Bekasi, Cikarang, Tambun, Setu, dan sekitarnya." },
 ];
 
 export function AreaSection() {
