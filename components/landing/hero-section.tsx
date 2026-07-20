@@ -32,7 +32,7 @@ export function HeroSection() {
             Sewa Alat Berat Jabodetabek
           </span>
 
-          <h1 className="mt-6 text-balance text-4xl font-extrabold leading-tight tracking-tight text-background sm:text-5xl lg:text-6xl">
+          <h1 className="mt-6 text-balance text-7xl font-thin leading-tight tracking-tight text-[#989b94] sm:text-5xl lg:text-6xl">
             Sewa Excavator Bogor
           </h1>
 
