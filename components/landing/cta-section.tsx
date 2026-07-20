@@ -11,7 +11,7 @@ export function CtaSection() {
         </h2>
         <p className="mx-auto mt-5 max-w-xl text-pretty text-lg leading-relaxed text-background/80">
           Hubungi kami sekarang untuk mendapatkan penawaran terbaik. Konsultasi
-          gratis dengan tim marketing kami, Bapak Zaky.
+          gratis dengan tim marketing kami, Bapak Rohim.
         </p>
 
         <div className="mt-9 flex flex-col justify-center gap-3 sm:flex-row">
