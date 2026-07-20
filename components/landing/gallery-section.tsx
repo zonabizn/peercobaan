@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const gallery = [
+const defaultGallery = [
   {
     src: "/images/gallery-foundation.png",
     caption: "Penggalian Pondasi",
@@ -24,6 +24,32 @@ const gallery = [
 ];
 
 export function GallerySection() {
+  const [galleryImages, setGalleryImages] = useState(defaultGallery);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchGalleryImages = async () => {
+      try {
+        const response = await fetch('/api/upload?type=gallery');
+        const data = await response.json();
+        
+        if (data.images && data.images.length > 0) {
+          const uploadedGallery = data.images.map((img: any, index: number) => ({
+            src: img.url,
+            caption: defaultGallery[index]?.caption || `Proyek ${index + 1}`,
+            span: defaultGallery[index]?.span || "",
+          }));
+          setGalleryImages(uploadedGallery);
+        }
+      } catch (error) {
+        console.error('Error fetching gallery:', error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchGalleryImages();
+  }, []);
   return (
     <section className="bg-background py-20 md:py-28">
       <div className="mx-auto max-w-7xl px-4 md:px-6">
@@ -40,7 +66,7 @@ export function GallerySection() {
         </div>
 
         <div className="mt-14 grid grid-cols-1 gap-3 auto-rows-[200px] sm:grid-cols-2 sm:gap-4 sm:auto-rows-[240px] lg:grid-cols-4 lg:gap-4 lg:auto-rows-[240px]">
-          {gallery.map((item) => (
+          {galleryImages.map((item) => (
             <figure
               key={item.caption}
               className={`group relative overflow-hidden rounded-lg sm:rounded-2xl ${item.span}`}

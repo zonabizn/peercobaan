@@ -11,6 +11,7 @@ import { FaqSection } from "@/components/landing/faq-section";
 import { CtaSection } from "@/components/landing/cta-section";
 import { FooterSection } from "@/components/landing/footer-section";
 import { FloatingWhatsapp } from "@/components/landing/floating-whatsapp";
+import { AdminLink } from "@/components/admin-link";
 
 export default function Home() {
   return (
@@ -28,6 +29,7 @@ export default function Home() {
       <CtaSection />
       <FooterSection />
       <FloatingWhatsapp />
+      <AdminLink />
     </main>
   );
 }
