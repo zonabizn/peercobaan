@@ -39,20 +39,24 @@ export function GallerySection() {
           </p>
         </div>
 
-        <div className="mt-14 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:auto-rows-[240px] lg:grid-cols-4">
+        <div className="mt-14 grid grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-4 lg:grid-cols-4 lg:gap-4">
           {gallery.map((item) => (
             <figure
               key={item.caption}
-              className={`group relative overflow-hidden rounded-2xl ${item.span}`}
+              className={`group relative overflow-hidden rounded-lg sm:rounded-2xl ${item.span}`}
             >
-              <Image
-                src={item.src}
-                alt={item.caption}
-                fill
-                className="object-cover transition-transform duration-500 group-hover:scale-110"
-              />
+              <div className={`relative w-full ${
+                item.src.includes('foundation') ? 'aspect-video sm:aspect-square' : 'aspect-video'
+              }`}>
+                <Image
+                  src={item.src}
+                  alt={item.caption}
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+              </div>
               <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/10 to-transparent" />
-              <figcaption className="absolute bottom-0 left-0 p-5 text-base font-bold text-background">
+              <figcaption className="absolute bottom-0 left-0 p-3 text-xs font-bold text-background sm:p-4 sm:text-base">
                 {item.caption}
               </figcaption>
             </figure>
