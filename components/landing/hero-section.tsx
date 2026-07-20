@@ -14,16 +14,17 @@ export function HeroSection() {
   return (
     <section
       id="home"
-      className="relative flex min-h-screen items-center overflow-hidden pt-20 sm:min-h-[92vh]"
+      className="relative flex min-h-[600px] items-center overflow-hidden pt-16 sm:pt-20 sm:min-h-[92vh]"
     >
       <Image
         src="/images/hero-excavator.png"
         alt="Excavator kuning bekerja di lokasi konstruksi saat senja"
         fill
         priority
-        className="object-cover object-top sm:object-center lg:object-right"
+        className="object-cover object-left sm:object-center lg:object-right"
+        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 100vw, 100vw"
       />
-      <div className="absolute inset-0 bg-gradient-to-r from-foreground/80 via-foreground/60 to-foreground/30 sm:from-foreground/90 sm:via-foreground/70 sm:to-foreground/40" />
+      <div className="absolute inset-0 bg-gradient-to-r from-foreground/75 via-foreground/50 to-transparent sm:from-foreground/90 sm:via-foreground/70 sm:to-foreground/40" />
 
       <div className="relative z-10 mx-auto w-full max-w-7xl px-4 py-16 md:px-6">
         <div className="max-w-2xl">
