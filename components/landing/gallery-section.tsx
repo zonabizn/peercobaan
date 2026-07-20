@@ -46,7 +46,7 @@ export function GallerySection() {
               className={`group relative overflow-hidden rounded-lg sm:rounded-2xl ${item.span}`}
             >
               <div className={`relative w-full ${
-                item.span.includes('row-span-2') ? 'aspect-square' : 'aspect-video'
+                item.src.includes('foundation') ? 'aspect-video sm:aspect-square' : 'aspect-video'
               }`}>
                 <Image
                   src={item.src}
