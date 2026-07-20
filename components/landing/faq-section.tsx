@@ -8,7 +8,7 @@ import {
 const faqs = [
   {
     q: "Berapa minimal sewa excavator?",
-    a: "Minimal sewa umumnya 50 jam kerja. Untuk durasi di bawah itu tetap bisa dilayani dengan penyesuaian harga. Silakan hubungi tim kami untuk detailnya.",
+    a: "Minimal sewa umumnya 40 jam kerja. Untuk durasi di bawah itu tetap bisa dilayani dengan penyesuaian harga. Silakan hubungi tim kami untuk detailnya.",
   },
   {
     q: "Apakah harga sudah termasuk operator?",
