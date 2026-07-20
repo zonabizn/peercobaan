@@ -32,7 +32,7 @@ export function HeroSection() {
             Sewa Alat Berat Jabodetabek
           </span>
 
-          <h1 className="mt-6 text-balance text-7xl font-thin leading-tight tracking-tight text-[#989b94] sm:text-5xl lg:text-6xl">
+          <h1 className="mt-6 text-balance text-2xl font-bold leading-tight tracking-tight text-[#fdfffb] sm:text-3xl lg:text-4xl" style={{ fontFamily: '"Poppins", sans-serif' }}>
             Sewa Excavator Bogor
           </h1>
 

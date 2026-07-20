@@ -1,6 +1,6 @@
 import React from "react"
 import type { Metadata } from 'next'
-import { Instrument_Sans, Instrument_Serif, JetBrains_Mono } from 'next/font/google'
+import { Instrument_Sans, Instrument_Serif, JetBrains_Mono, Poppins, Inter } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
@@ -18,6 +18,17 @@ const instrumentSerif = Instrument_Serif({
 const jetbrainsMono = JetBrains_Mono({ 
   subsets: ["latin"],
   variable: '--font-jetbrains'
+});
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  variable: '--font-poppins'
+});
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: '--font-inter'
 });
 
 export const metadata: Metadata = {
@@ -50,7 +61,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="id" className="bg-background">
-      <body className={`${instrumentSans.variable} ${instrumentSerif.variable} ${jetbrainsMono.variable} font-sans antialiased`}>
+      <body className={`${instrumentSans.variable} ${instrumentSerif.variable} ${jetbrainsMono.variable} ${poppins.variable} ${inter.variable} font-sans antialiased`}>
         {children}
         <Analytics />
       </body>
