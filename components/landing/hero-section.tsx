@@ -21,9 +21,9 @@ export function HeroSection() {
         alt="Excavator kuning bekerja di lokasi konstruksi saat senja"
         fill
         priority
-        className="object-cover object-center sm:object-right"
+        className="object-cover object-top sm:object-center lg:object-right"
       />
-      <div className="absolute inset-0 bg-gradient-to-r from-foreground/90 via-foreground/70 to-foreground/40" />
+      <div className="absolute inset-0 bg-gradient-to-r from-foreground/80 via-foreground/60 to-foreground/30 sm:from-foreground/90 sm:via-foreground/70 sm:to-foreground/40" />
 
       <div className="relative z-10 mx-auto w-full max-w-7xl px-4 py-16 md:px-6">
         <div className="max-w-2xl">
