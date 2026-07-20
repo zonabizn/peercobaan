@@ -14,14 +14,14 @@ export function HeroSection() {
   return (
     <section
       id="home"
-      className="relative flex min-h-[92vh] items-center overflow-hidden pt-20"
+      className="relative flex min-h-screen items-center overflow-hidden pt-20 sm:min-h-[92vh]"
     >
       <Image
         src="/images/hero-excavator.png"
         alt="Excavator kuning bekerja di lokasi konstruksi saat senja"
         fill
         priority
-        className="object-cover"
+        className="object-cover object-center sm:object-right"
       />
       <div className="absolute inset-0 bg-gradient-to-r from-foreground/90 via-foreground/70 to-foreground/40" />
 
